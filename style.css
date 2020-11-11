@@ -1,1 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
 
+body {
+  background-image: url("./Pics/BGpic.jfif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #06d8e0;
+}
+header {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 3%;
+}
+form {
+  background-color: rgba(65, 42, 32, 0.88);
+  margin-left: 28%;
+  margin-right: 28%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+#name,
+#email,
+#number {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 8px;
+  margin-bottom: 5px;
+}
+#dropdown {
+  padding: 8px;
+  margin: 10px 28% 10px 28%;
+}
+.radio {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5% 5% 5%;
+}
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+#aditional-text {
+  resize: vertical;
+  margin: 0 5% 5% 5%;
+}
+#submit {
+  padding: 8px;
+  width: 100px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #06d8e0;
+  border: none;
+}
+#name-label,
+#email-label,
+#number-label,
+#radio-description,
+#checkbox-description,
+#aditional-text-label {
+  margin-left: 5px;
+  margin-bottom: 3px;
+}

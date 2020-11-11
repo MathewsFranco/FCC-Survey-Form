@@ -5,63 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1 id="title">Are you a mainstream or hipster gamer?</h1>
+      <h1 id="title">Are you a mainstream or hipster player?</h1>
       <p id="description">Find out what kind of gamer you are</p>
     </header>
     <main>
       <form action="#" id="survey-form">
-        <label for="name" id="name-label">Name</label>
+        <label for="name" id="name-label">Name:</label>
         <input type="text" required placeholder="Type your name" id="name" />
-        <label for="email" id="email-label">Email</label>
-        <input
-          type="email"
-          required
-          placeholder="Insert your email"
-          id="email"
-        />
-        <label for="number" id="number-label">Age</label>
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" required placeholder="Type your email" id="email" />
+        <label for="number" id="number-label">Age:</label>
         <input type="number" placeholder="Age" id="number" min="10" max="110" />
         <select name="game kind" id="dropdown">
-          <option disabled selected hidden value="">Select a game type</option>
+          <option disabled selected value="">Select a game type</option>
           <option value="">FPS</option>
           <option value="">RTS</option>
           <option value="">MMORPG</option>
           <option value="">Simulator</option>
         </select>
         <p id="radio-description">Select your region:</p>
-        <label>
-          <input type="radio" name="region" value="america" />America
-        </label>
-        <label>
-          <input type="radio" name="region" value="europe" />Europe
-        </label>
-        <label> <input type="radio" name="region" value="asia" />Asia </label>
-        <label>
-          <input type="radio" name="region" value="africa" />Africa
-        </label>
-        <label>
-          <input type="radio" name="region" value="oceania" />Oceania
-        </label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="region" value="america" />America
+          </label>
+          <label>
+            <input type="radio" name="region" value="europe" />Europe
+          </label>
+          <label> <input type="radio" name="region" value="asia" />Asia </label>
+          <label>
+            <input type="radio" name="region" value="africa" />Africa
+          </label>
+          <label>
+            <input type="radio" name="region" value="oceania" />Oceania
+          </label>
+        </div>
         <p id="checkbox-description">Select your favorites:</p>
-        <label><input type="checkbox" value="dota" />Dota</label>
-        <label><input type="checkbox" value="csgo" />Counter-Strike Global
-          offensive</label>
-        <label><input type="checkbox" value="donkey-kong" />Donkey-kong</label>
-        <label><input type="checkbox" value="valorant" />Valorant</label>
-        <label><input type="checkbox" value="fez" />Fez</label>
-        <label><input type="checkbox" value="starcraft" />StarCraft</label>
-        <label><input type="checkbox" value="stardew-valley" />Stardew Valley</label
-        ><input type="checkbox" value="factorio" />Factorio</label
-        ><input type="checkbox" value="battletoads" />Battletoads</label
-        ><input type="checkbox" value="mortal-kombat" />Motal Kombat</label
-        ><input type="checkbox" value="euro-truck-simulator" />Euro Truck Simulator</label
-        ><input type="checkbox" value="biker-mice-from-mars" />Biker mice from Mars</label>
-        <label for="aditional-text">Insert additional information about your game type:</label>
+        <div class="checkbox">
+          <label><input type="checkbox" value="dota" />Dota</label>
+          <label>
+            <input type="checkbox" value="csgo" />Counter-Strike Global
+            Offensive</label
+          >
+
+          <label
+            ><input type="checkbox" value="donkey-kong" />Donkey-kong</label
+          >
+          <label><input type="checkbox" value="valorant" />Valorant</label>
+          <label><input type="checkbox" value="fez" />Fez</label>
+          <label><input type="checkbox" value="starcraft" />StarCraft</label>
+          <label
+            ><input
+              type="checkbox"
+              value="stardew-valley"
+            />StardewValley</label
+          >
+          <label><input type="checkbox" value="factorio" />Factorio</label>
+          <label
+            ><input type="checkbox" value="battletoads" />Battletoads</label
+          >
+          <label
+            ><input type="checkbox" value="mortal-kombat" />Motal Kombat</label
+          >
+          <label
+            ><input type="checkbox" value="euro-truck-simulator" />Euro Truck
+            Simulator</label
+          >
+          <label
+            ><input type="checkbox" value="biker-mice-from-mars" />Biker mice
+            from Mars</label
+          >
+        </div>
+        <label for="aditional-text" id="aditional-text-label"
+          >Insert additional information about your game type:</label
+        >
         <textarea id="aditional-text" cols="80" rows="7"></textarea>
-        <input type="submit" id="submit">
+        <input type="submit" id="submit" />
       </form>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
